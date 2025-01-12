@@ -536,7 +536,7 @@ accounts = [
 ]
 
 # ==== ID чата ====
-chat_id = -1002495997895
+chat_id = -1002330569421
 
 # async def run_accounts(accounts, chat_id):
 #     clients = []
