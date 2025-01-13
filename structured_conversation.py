@@ -83,9 +83,6 @@ accounts = [
         "phone": "+79363168089",
         "session": "session_matvey",
         "name": "Матвій",
-        "responses_to_messages": {
-            "Всем привет": ["О есть что-то для нас?"],
-        },
         "dialogue": [
             {
                 "question": {"text": "Хотел поделиться радостной новостью — я сейчас пишу вам с виллы на Бали. Вид на океан просто шикарен. Я не думал что я буду когдато так жить. А имено жить, а не выживать!", "from": "Матвій"},
@@ -651,7 +648,7 @@ async def run_accounts(accounts, chat_id):
                                         )],
                                         supports_streaming=True
                                     )
-                                await asyncio.sleep(random.randint(55, 350))
+                                await asyncio.sleep(random.randint(55, 450))
 
                     dialogue_index[account["name"]] += 1
                     save_state({"dialogue_index": dialogue_index}, "state.json")  # Збереження стану
